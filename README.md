@@ -209,8 +209,8 @@ W(e) = α · P(real) · I(impactable) · C(consciousness) · f(suffering) · R(r
 ### 外部資源
 
 - **GitHub 倉庫**：https://github.com/atlas-world/constitution (即將上線)
-- **官方網站**：https://atlas-world.org (即將上線)
-- **文檔中心**：https://docs.atlas-world.org (即將上線)
+- **官方網站**：https://atlas-world.cn (即將上線)
+- **文檔中心**：https://docs.atlas-world.cn (即將上線)
 
 ---
 
@@ -323,4 +323,5 @@ W(e) = α · P(real) · I(impactable) · C(consciousness) · f(suffering) · R(r
 
 **最後更新 / Last Update**: 2025-12-07  
 **版本 / Version**: v1.0
+
 
