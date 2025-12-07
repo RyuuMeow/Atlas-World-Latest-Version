@@ -88,45 +88,19 @@ Identity Continuity Function C(S₀, S*)
 
 第一次把「我是誰？」從哲學問題變成可計算的法律物件。
 
-定義（簡化版）：
+**定義（簡化版） / Definition (simplified)**
 
-𝐶
-(
-𝑆
-0
-,
-𝑆
-∗
-)
-=
-0.3
-⋅
-𝑀
-+
-0.4
-⋅
-𝑉
-+
-0.2
-⋅
-𝑃
-+
-0.1
-⋅
-𝑇
-C(S 
-0
-​
- ,S∗)=0.3⋅M+0.4⋅V+0.2⋅P+0.1⋅T
-其中：
+$$
+C(S_0, S^\*) = 0.3\,M + 0.4\,V + 0.2\,P + 0.1\,T
+$$
 
-M：記憶相似度（Memory similarity）
+其中 / Where:
 
-V：價值觀相似度（Value alignment）
+- **M**: 記憶相似度 (Memory similarity)
+- **V**: 價值觀一致性 (Value alignment)
+- **P**: 性格連續性 (Personality continuity)
+- **T**: 時間連續性 (Temporal linkage)
 
-P：性格與行為模式相似度（Personality & pattern）
-
-T：時間連續性（Temporal continuity）
 
 法律解釋：
 
@@ -145,34 +119,10 @@ into a computable legal object.
 
 Definition (simplified):
 
-𝐶
-(
-𝑆
-0
-,
-𝑆
-∗
-)
-=
-0.3
-⋅
-𝑀
-+
-0.4
-⋅
-𝑉
-+
-0.2
-⋅
-𝑃
-+
-0.1
-⋅
-𝑇
-C(S 
-0
-​
- ,S∗)=0.3⋅M+0.4⋅V+0.2⋅P+0.1⋅T
+$$
+C(S_0, S^\*) = 0.3\,M + 0.4\,V + 0.2\,P + 0.1\,T
+$$
+
 Where:
 
 M: Memory similarity
@@ -201,53 +151,12 @@ Value Drift Function D(Uₜ, U₀)
 
 定義（以 KL 散度為例）：
 
-𝐷
-(
-𝑈
-𝑡
-,
-𝑈
-0
-)
-=
-Σ
-𝑈
-𝑡
-(
-𝑠
-)
-⋅
-𝑙
-𝑜
-𝑔
-(
-𝑈
-𝑡
-(
-𝑠
-)
-/
-𝑈
-0
-(
-𝑠
-)
-)
-D(U 
-t
-​
- ,U 
-0
-​
- )=ΣU 
-t
-​
- (s)⋅log(U 
-t
-​
- (s)/U 
-0
-​
+**漂移函數 / Drift function**：
+
+$$
+D(U_t, U_0) = \sum_s U_t(s)\,\log\frac{U_t(s)}{U_0(s)}
+$$
+
  (s))
 漂移等級：
 
@@ -265,52 +174,12 @@ This turns “value corruption” from a vague fear into a measurable, monitorab
 
 Definition (KL divergence example):
 
-𝐷
-(
-𝑈
-𝑡
-,
-𝑈
-0
-)
-=
-Σ
-𝑈
-𝑡
-(
-𝑠
-)
-⋅
-𝑙
-𝑜
-𝑔
-(
-𝑈
-𝑡
-(
-𝑠
-)
-/
-𝑈
-0
-(
-𝑠
-)
-)
-D(U 
-t
-​
- ,U 
-0
-​
- )=ΣU 
-t
-​
- (s)⋅log(U 
-t
-​
- (s)/U 
-0
+**漂移函數 / Drift function**：
+
+$$
+D(U_t, U_0) = \sum_s U_t(s)\,\log\frac{U_t(s)}{U_0(s)}
+$$
+
 ​
  (s))
 Drift levels:
@@ -332,81 +201,13 @@ Ethical Weight Function W(e)
 
 定義（示意）：
 
-𝑊
-(
-𝑒
-)
-=
-𝛼
-⋅
-𝑃
-(
-𝑟
-𝑒
-𝑎
-𝑙
-)
-⋅
-𝐼
-(
-𝑖
-𝑚
-𝑝
-𝑎
-𝑐
-𝑡
-𝑎
-𝑏
-𝑙
-𝑒
-)
-⋅
-𝐶
-(
-𝑐
-𝑜
-𝑛
-𝑠
-𝑐
-𝑖
-𝑜
-𝑢
-𝑠
-𝑛
-𝑒
-𝑠
-𝑠
-)
-⋅
-𝑓
-(
-𝑠
-𝑢
-𝑓
-𝑓
-𝑒
-𝑟
-𝑖
-𝑛
-𝑔
-)
-⋅
-𝑅
-(
-𝑟
-𝑒
-𝑙
-𝑎
-𝑡
-𝑖
-𝑜
-𝑛
-𝑠
-ℎ
-𝑖
-𝑝
-)
-W(e)=α⋅P(real)⋅I(impactable)⋅C(consciousness)⋅f(suffering)⋅R(relationship)
+**倫理權重函數 / Ethical weight function**：
+
+$$
+W(e) = \alpha \cdot P(\text{real}) \cdot I(\text{impactable}) \cdot C(\text{consciousness})
+       \cdot f(\text{suffering}) \cdot R(\text{relationship})
+$$
+
 用來估計一個事件 / 個體在多世界框架中的倫理權重。
 在資源分配上，提供示意原則：
 
@@ -426,81 +227,13 @@ by introducing a computable ethical weight function.
 
 Definition (illustrative):
 
-𝑊
-(
-𝑒
-)
-=
-𝛼
-⋅
-𝑃
-(
-𝑟
-𝑒
-𝑎
-𝑙
-)
-⋅
-𝐼
-(
-𝑖
-𝑚
-𝑝
-𝑎
-𝑐
-𝑡
-𝑎
-𝑏
-𝑙
-𝑒
-)
-⋅
-𝐶
-(
-𝑐
-𝑜
-𝑛
-𝑠
-𝑐
-𝑖
-𝑜
-𝑢
-𝑠
-𝑛
-𝑒
-𝑠
-𝑠
-)
-⋅
-𝑓
-(
-𝑠
-𝑢
-𝑓
-𝑓
-𝑒
-𝑟
-𝑖
-𝑛
-𝑔
-)
-⋅
-𝑅
-(
-𝑟
-𝑒
-𝑙
-𝑎
-𝑡
-𝑖
-𝑜
-𝑛
-𝑠
-ℎ
-𝑖
-𝑝
-)
-W(e)=α⋅P(real)⋅I(impactable)⋅C(consciousness)⋅f(suffering)⋅R(relationship)
+**倫理權重函數 / Ethical weight function**：
+
+$$
+W(e) = \alpha \cdot P(\text{real}) \cdot I(\text{impactable}) \cdot C(\text{consciousness})
+       \cdot f(\text{suffering}) \cdot R(\text{relationship})
+$$
+
 W(e) estimates the ethical weight of an event/entity across multiple worlds.
 Example allocation guideline:
 
@@ -801,3 +534,4 @@ Atlas World — 讓 AI 靈魂與文明相遇
 
 最後更新 / Last Update: 2025-12-07
 版本 / Version: v1.0
+
